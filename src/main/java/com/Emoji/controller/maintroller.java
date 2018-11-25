@@ -5,9 +5,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class maintroller {
-    @RequestMapping("test/href1")
+    @RequestMapping("/search")
     public String test(){
-        return "haha";
+        return "search";
+
+    }
+}
+
+@Controller
+class contributeController {
+    @RequestMapping("/contribute")
+    public String test(){
+        return "contribute";
 
     }
 }
