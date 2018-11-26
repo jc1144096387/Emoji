@@ -80,7 +80,7 @@
     <center>
         <ul>
             <li>
-                <a href="index.html" style="background: url(logo.png) no-repeat 33%,5%;background-size: 100% 100%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a href="index.html" style="background: url(../../picture/logo.png) no-repeat 33%,5%;background-size: 100% 100%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
             </li>
             <li>
                 <a href="index.html">最新套图</a>
@@ -114,8 +114,8 @@
     </center>
 </div>
 <div class="top2">
-    <a href="index.html" style="background: url(logo.png) no-repeat 33%,5%;background-size: 100% 100%;float: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-    <img id="ico" src="drawer.png" alt="">
+    <a href="index.html" style="background: url(../../picture/logo.png) no-repeat 33%,5%;background-size: 100% 100%;float: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <img id="ico" src="../../picture/drawer.png" alt="">
 </div>
 <div class="drawer">
     <ul>
@@ -140,7 +140,7 @@
 </div>
 <div class="main">
     <div class="logo">
-        <img src="logo.png" alt="logo">
+        <img src="../../picture/logo.png" alt="logo">
     </div>
     <div class="search">
 

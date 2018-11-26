@@ -4,19 +4,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class maintroller {
+public class SearchController {
     @RequestMapping("/search")
     public String test(){
         return "search";
-
-    }
-}
-
-@Controller
-class contributeController {
-    @RequestMapping("/contribute")
-    public String test(){
-        return "contribute";
-
     }
 }

@@ -31,7 +31,7 @@ function detectZoom (){
   }
    if(ratio<375){
     drawer.style.display='none'
-    oImg.src = 'drawer.png';
+    oImg.src = '../../picture/drawer.png';
     top2.style.display='none';
     top1.style.display='block';
   }
