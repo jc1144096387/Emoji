@@ -19,10 +19,20 @@
             http://www.springframework.org/schema/aop/spring-aop.xsd
             ">
     <!-- 配置c3p0 -->
+    <!--数据库配置 -->
+    <bean id = "propertyConfigurer" class = "org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:jdbc.properties</value>
+            </list>
+        </property>
+
+    </bean>
+
     <!-- 连接池 -->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <property name="driverClass" value="com.mysql.cj.jdbc.Driver"></property>
-        <property name="jdbcUrl" value="jdbc:mysql://localhost/emp?characterEncoding=utf8"></property>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost/emoji?characterEncoding=utf8"></property>
         <property name="user" value="root"></property>
         <property name="password" value="xiaowen"></property>
         <property name="minPoolSize" value="1"></property>
@@ -42,16 +52,17 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"></property>
         <property name="configLocation" value="classpath:/mybatis/mybatis-config.xml"></property>
+        <property name="typeAliasesPackage" value="com.springmvc.entity" />
         <property name="mapperLocations">
             <list>
-                <value>classpath:/sqlmap/*.xml</value>
+                <value>classpath:/sqlmap/*Mapper.xml</value>
             </list>
         </property>
     </bean>
 
     <!-- 扫描生成所有dao层 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.Emoji.dao"></property>
+        <property name="basePackage" value="com.Emoji.dao,com.Emoji.admin.dao"></property>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
     </bean>
 </beans>
