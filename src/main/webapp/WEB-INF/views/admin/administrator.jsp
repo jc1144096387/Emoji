@@ -28,12 +28,11 @@
     <!-- ICONS -->
     <link rel="apple-touch-icon" sizes="76x76" href="../picture/apple-icon.png">
     <link rel="icon" type="image/png" sizes="96x96" href="../picture/favicon.png">
-
     <style>
-        .sidebar .nav > li > a.user{
-            background-color: #252c35;
-            border-left-color: #00AAFF;
-        }
+         .sidebar .nav > li > a.administrator{
+             background-color: #252c35;
+             border-left-color: #00AAFF;
+         }
     </style>
 </head>
 
@@ -103,6 +102,7 @@
         <%--</div>--%>
     <%--</nav>--%>
     <%--<!-- 头部导航栏结束 -->--%>
+
     <%@ include file="leftNavigation.jsp" %>
     <%--<!-- 左侧边栏 -->--%>
     <%--<div id="sidebar-nav" class="sidebar">--%>
@@ -128,10 +128,11 @@
                     <%--<li><a href="typography.html" class=""><i class="lnr lnr-text-format"></i> <span>Typography</span></a></li>--%>
                     <%--<li><a href="icons.html" class=""><i class="lnr lnr-linearicons"></i> <span>Icons</span></a></li> -->--%>
                     <%--<!-- 有class为active的元素为当前页面对应的导航或者当前选中的元素 -->--%>
-                    <%--<li><a href="home" class=""><i class="lnr lnr-home"></i> <span>仪表盘</span></a></li>--%>
-                    <%--<li><a href="user" class="active"><i class="lnr lnr-home"></i> <span>用户管理</span></a></li>--%>
+                    <%--<li><a href="home" class="active"><i class="lnr lnr-home"></i> <span>仪表盘</span></a></li>--%>
+                    <%--<li><a href="user" class=""><i class="lnr lnr-home"></i> <span>用户管理</span></a></li>--%>
                     <%--<li><a href="index.html" class=""><i class="lnr lnr-home"></i> <span>表情包管理</span></a></li>--%>
                     <%--<li><a href="index.html" class=""><i class="lnr lnr-home"></i> <span>评论管理</span></a></li>--%>
+                    <%--<li><a href="administrator" class=""><i class="lnr lnr-home"></i> <span>人员管理</span></a></li>--%>
                     <%--<li>--%>
                         <%--<a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>Pages</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>--%>
                         <%--<div id="subPages" class="collapse ">--%>
