@@ -17,6 +17,7 @@
     <mvc:resources location="/picture/" mapping="/picture/**"/>
     <mvc:resources location="/css/" mapping="/css/**"/>
     <mvc:resources location="/js/" mapping="/js/**"/>
+    <mvc:resources location="/vendor/" mapping="/vendor/**"/>
 
     <!-- 配置视图解析器，把控制器的逻辑视频映射为真正的视图 -->
     <!-- /WEB-INF/jsp/start.jsp -->
